@@ -10,7 +10,7 @@ public class GrafoD extends Grafo {
 
     protected int numV, numA;
     protected ListaConPI<Adyacente>[] ElArray;
-    protected String camino = "";
+    
 
     public GrafoD() {
 
@@ -147,6 +147,7 @@ public class GrafoD extends Grafo {
 
     @Override
     public String Caminos(int SALIDA, int DESTINO)  {
+        String camino = "";
         int Nodo, cantidadVecinos;
         Pila Vecinos = new Pila();
         Pila Paquete = new Pila();
